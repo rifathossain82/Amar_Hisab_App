@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hisab_app/src/core/extensions/build_context_extension.dart';
-import 'package:hisab_app/src/core/utils/color.dart';
+import 'package:hisab_app/src/features/dashboard/view/pages/dashboard_page.dart';
 import 'package:hisab_app/src/features/main/view/widgets/side_menu.dart';
 
 class MainPage extends StatelessWidget {
@@ -9,6 +9,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: const SideMenu(),
       body: Row(
         children: [
           if (context.isDesktop)
@@ -16,11 +17,9 @@ class MainPage extends StatelessWidget {
               flex: 1,
               child: SideMenu(),
             ),
-          Expanded(
+          const Expanded(
             flex: 5,
-            child: Container(
-              height: double.infinity,
-            ),
+            child: DashboardPage(),
           ),
         ],
       ),
