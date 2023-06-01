@@ -1,4 +1,4 @@
-import 'package:hisab_app/src/features/main/models/business_model.dart';
+import 'package:hisab_app/src/models/business_model.dart';
 
 List<BusinessModel> businessDummyData = [
   BusinessModel(
@@ -17,3 +17,51 @@ List<BusinessModel> businessDummyData = [
     totalBooks: 2,
   ),
 ];
+
+List<String> businessCategories = [
+  "Retail",
+  "Food & Beverage",
+  "Hospitality",
+  "Healthcare",
+  "Technology",
+  "Finance",
+  "Education",
+  "Real Estate",
+  "Automotive",
+  "Fashion",
+  "Beauty",
+  "Entertainment",
+  "Fitness",
+  "Travel",
+  "E-commerce",
+  "Marketing",
+  "Consulting",
+  "Legal",
+  "Construction",
+  "Art & Design",
+];
+
+
+List<String> businessTypes = [
+  "Restaurant",
+  "Cafe",
+  "Bakery",
+  "Retail Store",
+  "Salon",
+  "Spa",
+  "Gym",
+  "Hotel",
+  "Pharmacy",
+  "Grocery Store",
+  "Tech Startup",
+  "Financial Services",
+  "Consulting Agency",
+  "Law Firm",
+  "Real Estate Agency",
+  "Construction Company",
+  "Travel Agency",
+  "Pet Store",
+  "Auto Repair Shop",
+  "Art Gallery",
+];
+

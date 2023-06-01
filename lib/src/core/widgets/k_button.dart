@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hisab_app/src/core/extensions/build_context_extension.dart';
+import 'package:hisab_app/src/core/utils/color.dart';
 
 class KButton extends StatelessWidget {
   const KButton({
@@ -26,8 +27,8 @@ class KButton extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(borderRadius ?? 5),
       ),
-      color: bgColor ?? context.primaryColor,
-      height: height ?? 42,
+      color: bgColor ?? kPrimarySwatchColor,
+      height: height ?? 45,
       minWidth: width ?? context.screenWidth,
       padding: const EdgeInsets.symmetric(horizontal: 15),
       elevation: 0,
