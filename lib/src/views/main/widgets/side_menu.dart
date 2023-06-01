@@ -50,14 +50,15 @@ class _SideMenuState extends State<SideMenu> {
             width: context.screenWidth,
             margin: const EdgeInsets.all(15),
             child: ListTile(
-              onTap: () {},
+              onTap: () {} ,
               horizontalTitleGap: 0.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  side: BorderSide(
-                    color: Theme.of(context).textTheme.titleSmall!.color!,
-                    width: 1,
-                  )),
+                borderRadius: BorderRadius.circular(8),
+                side: BorderSide(
+                  color: context.textTheme.titleSmall!.color!,
+                  width: 1,
+                ),
+              ),
               leading: const Icon(Icons.add),
               title: Text(
                 'Add New Business',
